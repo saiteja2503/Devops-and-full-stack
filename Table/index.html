@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Modern Professional Table</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="site-header">
+        <div class="brand">
+          <div class="brand-logo">TP</div>
+          <div class="brand-text">
+            <div class="brand-name">TablePro</div>
+            <div class="tagline">Student Performance Dashboard</div>
+          </div>
+        </div>
+
+        <div class="controls">
+          <div class="search">
+            <input
+              type="search"
+              placeholder="Search students, courses..."
+              aria-label="Search students"
+            />
+          </div>
+          <button class="btn primary">Export</button>
+        </div>
+      </header>
+
+      <main class="main">
+        <div class="table-container">
+          <h2 class="table-title">Student Performance</h2>
+
+          <table
+            class="modern-table"
+            cellspacing="0"
+            cellpadding="10"
+            aria-label="Student Performance Table"
+          >
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Course</th>
+                <th>Score</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td data-label="ID">101</td>
+                <td data-label="Name">Rithwik</td>
+                <td data-label="Course">Computer Science</td>
+                <td data-label="Score">92</td>
+                <td data-label="Status">
+                  <span class="status success">Passed</span>
+                </td>
+              </tr>
+              <tr>
+                <td data-label="ID">102</td>
+                <td data-label="Name">Ananya</td>
+                <td data-label="Course">Data Science</td>
+                <td data-label="Score">85</td>
+                <td data-label="Status">
+                  <span class="status success">Passed</span>
+                </td>
+              </tr>
+              <tr>
+                <td data-label="ID">103</td>
+                <td data-label="Name">Arjun</td>
+                <td data-label="Course">Cyber Security</td>
+                <td data-label="Score">61</td>
+                <td data-label="Status">
+                  <span class="status warning">Average</span>
+                </td>
+              </tr>
+              <tr>
+                <td data-label="ID">104</td>
+                <td data-label="Name">Sneha</td>
+                <td data-label="Course">AI &amp; ML</td>
+                <td data-label="Score">45</td>
+                <td data-label="Status">
+                  <span class="status danger">Failed</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
+
+      <footer class="site-footer">
+        <small>© 2026 TablePro — Lightweight dashboard UI</small>
+      </footer>
+    </div>
+  </body>
+</html>
