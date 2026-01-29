@@ -1,6 +1,6 @@
 const express = require("express");
+const path = require("path");
 const errorHandler = require("./middleware/errorHandler");
-const { sequelize } = require("./models");
 
 const courseRoutes = require("./routes/course.routes");
 const enrollmentRoutes = require("./routes/enrollment.routes");
@@ -8,32 +8,28 @@ const enrollmentRoutes = require("./routes/enrollment.routes");
 const app = express();
 app.use(express.json());
 
-// Root endpoint - verifies database connection
-app.get("/", async (req, res) => {
-  try {
-    await sequelize.authenticate();
-    res.json({ message: "Training Platform API running" });
-  } catch (error) {
-    res.status(503).json({ message: "API unavailable - database connection failed" });
-  }
-});
+// Serve static files from public directory
+app.use(express.static(path.join(__dirname, "../public")));
 
 // API routes
 app.use("/courses", courseRoutes);
 app.use("/enrollments", enrollmentRoutes);
 
-// API root endpoint - verifies database connection
-app.get("/api", async (req, res) => {
-  try {
-    await sequelize.authenticate();
-    res.json({ message: "Training Platform API running" });
-  } catch (error) {
-    res.status(503).json({ message: "API unavailable - database connection failed" });
+// API root endpoint
+app.get("/api", (req, res) => res.json({ message: "Training Platform API running" }));
+
+// 404 handler for undefined API routes (must be before catch-all)
+app.use((req, res, next) => {
+  if (req.path.startsWith("/api") || req.path.startsWith("/courses") || req.path.startsWith("/enrollments")) {
+    return res.status(404).json({ message: "Not found" });
   }
+  next();
 });
 
-// 404 handler for all routes
-app.use((req, res) => res.status(404).json({ message: "Not found" }));
+// Serve index.html for all other routes (SPA fallback)
+app.use((req, res) => {
+  res.sendFile(path.join(__dirname, "../public/index.html"));
+});
 
 app.use(errorHandler);
 
