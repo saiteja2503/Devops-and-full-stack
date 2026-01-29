@@ -199,7 +199,7 @@ All required dependencies are included within each module to ensure consistent e
 
 ## Maintainer
 
-Rithwik Bandi
+Kandagatla Saiteja
 Hall Ticket No: **2303A52325**
 
 ---
