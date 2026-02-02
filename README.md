@@ -1,7 +1,9 @@
-# DevOps and Full Stack Assignments
+# DevOps and Full Stack Assignments 🚀
 
-This repository contains my **date-wise assignments** for the DevOps and Full Stack course.  
-Each assignment is organized into a separate folder based on the **date of completion**.
+This repository contains my **date-wise assignments** for the **DevOps and Full Stack** course.  
+Each assignment is organized into a separate folder based on the **date of completion**, making the repository easy to understand and evaluate.
+
+---
 
 ## 📁 Repository Structure
 
@@ -27,52 +29,47 @@ Devops-and-full-stack
 │       └── README.md
 │
 └── README.md
-```
 
+Assignment Overview
 
----
+This repository includes multiple assignments completed on different dates as part of academic coursework.
 
-## 🧠 Assignment Overview
+Each date-wise folder may contain:
 
-### 📌 Feb-02: Student Marks Card (React – Props)
-- Built using **React**
-- Demonstrates **parent to child communication using props**
-- Student data is stored in the parent component (`App.js`)
-- Data is passed and displayed in the child component (`StudentCard.js`)
+React applications
 
----
+JavaScript practice programs
 
-## 🔁 Development & Git Workflow
+DevOps-related tasks
 
-The following steps are followed for each assignment:
+Concept-based implementations
 
+Each assignment folder is self-contained and can be reviewed independently.
 
+Development & Git Workflow
 
-Create folder (date-wise)
-↓
+For every assignment, the following workflow is followed:
+
+Create date-wise folder
+        ↓
 Develop / Code
-↓
-Check status (git status)
-↓
-Add files (git add)
-↓
+        ↓
+Check changes (git status)
+        ↓
+Stage files (git add)
+        ↓
 Commit changes (git commit)
-↓
+        ↓
 Push to GitHub (git push)
 
+Tools & Technologies Used
 
----
+React.js
 
-## 🛠 Tools & Technologies Used
-- React.js
-- Git & GitHub
-- VS Code
-- Node.js & npm
+JavaScript
 
----
+Git & GitHub
 
-## ✅ Notes
-- Each assignment is **self-contained**
-- Repository is maintained in a **clean, date-wise structure**
-- This structure makes evaluation and navigation easy
+VS Code
 
+Node.js & npm
