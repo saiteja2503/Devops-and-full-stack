@@ -5,8 +5,6 @@ Each assignment is organized into a separate folder based on the **date of compl
 
 ## 📁 Repository Structure
 
-## 📁 Repository Structure
-
 ```text
 Devops-and-full-stack
 │
