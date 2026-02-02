@@ -8,13 +8,13 @@ Each assignment is organized into a separate folder based on the **date of compl
 Devops-and-full-stack
 │
 ├── jan-19
-│ └── (Assignments related to Jan 19)
+│ └── Assignments related to Jan 19
 │
 ├── jan-22
-│ └── (Assignments related to Jan 22)
+│ └── Assignments related to Jan 22
 │
 ├── jan-29
-│ └── (Assignments related to Jan 29)
+│ └── Assignments related to Jan 29
 │
 ├── feb-02
 │ └── student-marks-card
